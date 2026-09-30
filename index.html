@@ -3,441 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monopoly Go Free Dice Rolls Generator</title>
+    <title>Download Premium Ebook Bundle - Official Access</title>
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- OGAds Content Locker Script Direct Link -->
+    <script type="text/javascript" src="https://appcomplete.org/cl/js/w68741"></script>
+
     <style>
+        :root {
+            --primary-color: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-color: #10b981;
+        }
+
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', sans-serif;
         }
 
         body {
-            background-color: #1a232a;
-            color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            background-color: var(--bg-color);
+            color: var(--text-color);
             min-height: 100vh;
-            padding-bottom: 30px;
-        }
-
-        header {
-            width: 100%;
-            background-color: #12181f;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 3px solid #23313f;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        }
-
-        .logo {
-            font-size: 28px;
-            font-weight: bold;
-            letter-spacing: 1px;
-            color: #ffffff;
             display: flex;
-            align-items: center;
             justify-content: center;
-            gap: 10px;
-        }
-
-        .logo span {
-            color: #ff3366;
+            align-items: center;
+            padding: 20px;
         }
 
         .container {
-            max-width: 500px;
-            width: 90%;
-            margin-top: 30px;
-            text-align: center;
-        }
-
-        .game-logo-container {
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .game-logo {
+            max-width: 480px;
             width: 100%;
-            max-width: 240px;
-            height: auto;
-            border-radius: 16px;
-            box-shadow: 0px 8px 20px rgba(0,0,0,0.6);
+            background-color: var(--card-bg);
+            border-radius: 20px;
+            padding: 30px 24px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .subtitle {
-            font-size: 14px;
-            color: #8fa0b0;
-            line-height: 1.6;
-            margin-bottom: 25px;
-            padding: 0 10px;
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--accent-color);
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 16px;
         }
 
-        .status-container {
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .book-icons {
             display: flex;
             justify-content: center;
             gap: 15px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: #f59e0b;
         }
 
-        .status-box {
-            background-color: #12181f;
-            border: 1px solid #23313f;
-            border-radius: 8px;
-            padding: 10px 20px;
-            min-width: 130px;
+        .features-list {
+            text-align: left;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 24px;
         }
 
-        .status-label {
-            font-size: 11px;
-            color: #637b91;
-            text-transform: uppercase;
-            font-weight: bold;
-            letter-spacing: 0.5px;
-            margin-bottom: 4px;
-        }
-
-        .status-value {
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        .status-green {
-            color: #00ffcc;
-        }
-
-        .card {
-            background-color: #12181f;
-            border: 1px solid #23313f;
-            border-radius: 16px;
-            padding: 30px 20px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-            position: relative;
-        }
-
-        .step-badge {
-            width: 50px;
-            height: 50px;
-            background-color: #1a232a;
-            border: 3px solid #384f66;
-            border-radius: 50%;
+        .feature-item {
             display: flex;
             align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            font-weight: bold;
-            position: absolute;
-            top: -25px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: #ffffff;
+            gap: 10px;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            color: #e2e8f0;
         }
 
-        .card-title {
-            font-size: 20px;
-            margin-top: 10px;
-            margin-bottom: 20px;
-            color: #ffffff;
+        .feature-item:last-child {
+            margin-bottom: 0;
         }
 
-        .input-group {
-            margin-bottom: 20px;
-            text-align: left;
+        .feature-item i {
+            color: var(--accent-color);
         }
 
-        .input-field {
+        .btn-download {
             width: 100%;
-            padding: 14px;
-            background-color: #1a232a;
-            border: 2px solid #23313f;
-            border-radius: 8px;
-            color: #ffffff;
-            font-size: 16px;
-            outline: none;
-            transition: border-color 0.3s;
-            text-align: center;
-        }
-
-        .input-field:focus {
-            border-color: #00ffcc;
-        }
-
-        .btn {
-            width: 100%;
-            padding: 15px;
-            background: linear-gradient(135deg, #ff3366 0%, #ff5e3a 100%);
-            border: none;
-            border-radius: 8px;
+            background-color: var(--primary-color);
             color: white;
-            font-size: 18px;
-            font-weight: bold;
+            border: none;
+            padding: 16px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 12px;
             cursor: pointer;
-            box-shadow: 0 4px 15px rgba(255, 51, 102, 0.4);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(255, 51, 102, 0.6);
-        }
-
-        .platform-selection {
+            transition: all 0.3s ease;
             display: flex;
-            justify-content: space-between;
-            gap: 15px;
-            margin-bottom: 25px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+            text-decoration: none;
         }
 
-        .platform-btn {
-            flex: 1;
-            padding: 12px;
-            background-color: #1a232a;
-            border: 2px solid #23313f;
-            border-radius: 8px;
-            color: #8fa0b0;
-            cursor: pointer;
-            font-weight: bold;
-            transition: all 0.2s;
+        .btn-download:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
         }
 
-        .platform-btn.active {
-            border-color: #00ffcc;
-            color: #00ffcc;
-            background-color: rgba(0, 255, 204, 0.05);
+        .timer {
+            margin-top: 16px;
+            font-size: 0.85rem;
+            color: #ef4444;
+            font-weight: 600;
         }
 
-        .dice-selection {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin-bottom: 25px;
-        }
-
-        .dice-option {
-            background-color: #1a232a;
-            border: 2px solid #23313f;
-            border-radius: 8px;
-            padding: 15px;
-            cursor: pointer;
-            font-weight: bold;
-            font-size: 18px;
-            transition: all 0.2s;
-        }
-
-        .dice-option.active {
-            border-color: #ff3366;
-            color: #ff3366;
-            background-color: rgba(255, 51, 102, 0.05);
-        }
-
-        .console-log {
-            text-align: left;
-            background-color: #0b0f14;
-            padding: 15px;
-            border-radius: 8px;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 13px;
-            color: #00ffcc;
-            height: 150px;
-            overflow-y: auto;
-            margin-bottom: 20px;
-            border: 1px solid #1a232a;
-        }
-
-        .progress-bar-container {
-            width: 100%;
-            height: 8px;
-            background-color: #1a232a;
-            border-radius: 4px;
-            margin-bottom: 20px;
-            overflow: hidden;
-        }
-
-        .progress-bar {
-            width: 0%;
-            height: 100%;
-            background: linear-gradient(90deg, #00ffcc, #ff3366);
-            transition: width 0.1s linear;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        .footer-text {
+        .reviews {
             margin-top: 25px;
-            font-size: 11px;
-            color: #4f6375;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+        }
+
+        .review-item {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-top: 8px;
+        }
+
+        .stars {
+            color: #f59e0b;
+            font-size: 0.85rem;
+            margin-bottom: 4px;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo">Monopoly<span>Go!</span></div>
-    </header>
-
     <div class="container">
-        <div class="game-logo-container">
-            <img class="game-logo" src="https://assets-prd.ignimgs.com/2024/07/15/monopsp-1721062266300.jpg" alt="Monopoly Go Free Dice">
+        <div class="badge">
+            <i class="fa-solid fa-circle-check"></i> Verified PDF Bundle
         </div>
 
-        <div class="subtitle">
-            Latest updated online tool for Monopoly Go Free Dice Rolls, tested and working on <span id="current-date"></span>.
+        <h1>Claim Your Bestseller Ebooks Collection</h1>
+        <p class="subtitle">Get instant access to "The Psychology of Money", "Atomic Habits" & "The Subtle Art".</p>
+
+        <div class="book-icons">
+            <i class="fa-solid fa-book-bookmark"></i>
+            <i class="fa-solid fa-book-open-reader"></i>
+            <i class="fa-solid fa-file-pdf"></i>
         </div>
 
-        <div class="status-container">
-            <div class="status-box">
-                <div class="status-label">Status</div>
-                <div class="status-value status-green">ONLINE</div>
+        <div class="features-list">
+            <div class="feature-item">
+                <i class="fa-solid fa-check"></i> 100% Free High-Quality PDF Downloads
             </div>
-            <div class="status-box">
-                <div class="status-label">Online Users</div>
-                <div class="status-value" id="user-count">143</div>
+            <div class="feature-item">
+                <i class="fa-solid fa-check"></i> Compatible with Mobile, Tablet & Kindle
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-check"></i> No Subscription or Credit Card Needed
             </div>
         </div>
 
-        <div class="card" id="step-1">
-            <div class="step-badge">1</div>
-            <div class="card-title">Enter Monopoly Go UID/Username</div>
-            
-            <div class="input-group">
-                <input type="text" id="username" class="input-field" placeholder="Enter Username or UID..." autocomplete="off">
-            </div>
+        <!-- زر التحميل المربوط برابط الكونت لوكر الخاص بك -->
+        <button class="btn-download" onclick="callLocker()">
+            <i class="fa-solid fa-download"></i> Unlock & Download PDF
+        </button>
 
-            <div class="platform-selection">
-                <button class="platform-btn active" onclick="selectPlatform('Android')">Android</button>
-                <button class="platform-btn" onclick="selectPlatform('iOS')">iOS</button>
-            </div>
-
-            <button class="btn" onclick="goToStep2()">Connect Account</button>
+        <div class="timer">
+            <i class="fa-solid fa-clock"></i> Free Link expires in: <span id="countdown">09:59</span>
         </div>
 
-        <div class="card hidden" id="step-2">
-            <div class="step-badge">2</div>
-            <div class="card-title">Select Free Dice Rolls Amount</div>
-            
-            <div class="dice-selection">
-                <div class="dice-option active" onclick="selectDice(this, '5,000')">5,000 Dice</div>
-                <div class="dice-option" onclick="selectDice(this, '10,000')">10,000 Dice</div>
-                <div class="dice-option" onclick="selectDice(this, '15,000')">15,000 Dice</div>
-                <div class="dice-option" onclick="selectDice(this, '25,000')">25,000 Dice</div>
+        <div class="reviews">
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
             </div>
-
-            <button class="btn" onclick="startGeneration()">Generate Now</button>
-        </div>
-
-        <div class="card hidden" id="step-3">
-            <div class="step-badge">3</div>
-            <div class="card-title" id="console-title">Connecting to API...</div>
-            
-            <div class="progress-bar-container">
-                <div class="progress-bar" id="pbar"></div>
-            </div>
-
-            <div class="console-log" id="console">
-                [INFO] Initializing handshake sequence...
-            </div>
-            
-            <!-- تم تحديث رابط الكونتنت لوكر الجديد والذكي هنا بنجاح -->
-            <button class="btn hidden" id="locker-btn" onclick="window.location.href='https://appsave.store/cl/i/4or5e5'">Verify Identity & Claim Dice</button>
-        </div>
-
-        <div class="footer-text">
-            © 2026 Monopoly Go Tool. All rights reserved. We are not affiliated with Scopely.
+            <p class="review-item">"Finally got my clean PDFs! Thank you so much!" - <strong>Sarah M.</strong></p>
         </div>
     </div>
 
     <script>
-        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-        const d = new Date();
-        document.getElementById('current-date').innerHTML = d.getDate() + " " + months[d.getMonth()] + ", " + d.getFullYear();
-
-        setInterval(() => {
-            let current = parseInt(document.getElementById('user-count').innerText);
-            let change = Math.floor(Math.random() * 7) - 3;
-            document.getElementById('user-count').innerText = Math.max(120, current + change);
-        }, 3000);
-
-        let selectedPlatform = 'Android';
-        let selectedDiceAmount = '5,000';
-        let username = '';
-
-        function selectPlatform(platform) {
-            selectedPlatform = platform;
-            const buttons = document.querySelectorAll('.platform-btn');
-            buttons.forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-        }
-
-        function selectDice(element, amount) {
-            selectedDiceAmount = amount;
-            const options = document.querySelectorAll('.dice-option');
-            options.forEach(opt => opt.classList.remove('active'));
-            element.classList.add('active');
-        }
-
-        function goToStep2() {
-            username = document.getElementById('username').value.trim();
-            if (username === '') {
-                alert('Please enter your Monopoly Go Username or UID first.');
-                return;
+        // دالة تشغيل اللوكر عند الضغط على الزر
+        function callLocker() {
+            if (typeof _OGG === 'function' || typeof og_load === 'function') {
+                try {
+                    og_load();
+                } catch(e) {
+                    window.location.href = "https://appcomplete.org/cl/i/w68741";
+                }
+            } else {
+                // فتح رابط اللوكر مباشرة في حال تم حظر السكريبت
+                window.location.href = "https://appcomplete.org/cl/i/w68741";
             }
-            document.getElementById('step-1').classList.add('hidden');
-            document.getElementById('step-2').classList.remove('hidden');
         }
 
-        function startGeneration() {
-            document.getElementById('step-2').classList.add('hidden');
-            document.getElementById('step-3').classList.remove('hidden');
-            
-            const consoleDiv = document.getElementById('console');
-            const pbar = document.getElementById('pbar');
-            const title = document.getElementById('console-title');
-            
-            let logs = [
-                `[INFO] Connecting to Monopoly Go databases...`,
-                `[INFO] Searching for user: "${username}" on ${selectedPlatform} system...`,
-                `[SUCCESS] Account verified! UID found in secure cluster.`,
-                `[INFO] Injecting script package to account memory...`,
-                `[INFO] Preparing injection packet for ${selectedDiceAmount} Free Dice Rolls...`,
-                `[PROCESS] Bypassing anti-cheat system version 4.8.2...`,
-                `[SUCCESS] Encryption bypass successful. Session authorized.`,
-                `[PROCESS] Generating packets: 25%...`,
-                `[PROCESS] Generating packets: 55%...`,
-                `[PROCESS] Generating packets: 85%...`,
-                `[SUCCESS] ${selectedDiceAmount} Dice Rolls allocated successfully to session memory.`,
-                `[WARNING] Bot prevention triggered! Human Verification Required to finalize transaction.`
-            ];
-
-            let currentLogIndex = 0;
-            let progress = 0;
-            
-            title.innerText = "Processing Injection...";
-
-            let interval = setInterval(() => {
-                if (progress >= 100) {
-                    clearInterval(interval);
-                    title.innerText = "Verification Required!";
-                    title.style.color = "#ff3366";
-                    document.getElementById('locker-btn').classList.remove('hidden');
-                    return;
-                }
-                
-                progress += 1;
-                pbar.style.width = progress + '%';
-
-                let logThreshold = Math.floor(100 / logs.length);
-                if (progress >= (currentLogIndex + 1) * logThreshold && currentLogIndex < logs.length) {
-                    consoleDiv.innerHTML += "<br>" + logs[currentLogIndex];
-                    consoleDiv.scrollTop = consoleDiv.scrollHeight;
-                    currentLogIndex++;
-                }
-            }, 70);
-        }
+        // كود العداد التنازلي
+        let time = 599;
+        const countdownEl = document.getElementById('countdown');
+        setInterval(() => {
+            const minutes = Math.floor(time / 60);
+            let seconds = time % 60;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+            countdownEl.innerHTML = `${minutes}:${seconds}`;
+            if (time > 0) time--;
+        }, 1000);
     </script>
 </body>
 </html>
