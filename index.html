@@ -7,9 +7,6 @@
     <!-- Google Fonts & FontAwesome Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- OGAds Content Locker Script Direct Link -->
-    <script type="text/javascript" src="https://appcomplete.org/cl/js/w68741"></script>
 
     <style>
         :root {
@@ -189,8 +186,8 @@
             </div>
         </div>
 
-        <!-- زر التحميل المربوط برابط الكونت لوكر الخاص بك -->
-        <button class="btn-download" onclick="callLocker()">
+        <!-- زر التحميل ينقل الزائر للوكر عند الضغط فقط -->
+        <button class="btn-download" onclick="openLocker()">
             <i class="fa-solid fa-download"></i> Unlock & Download PDF
         </button>
 
@@ -211,18 +208,8 @@
     </div>
 
     <script>
-        // دالة تشغيل اللوكر عند الضغط على الزر
-        function callLocker() {
-            if (typeof _OGG === 'function' || typeof og_load === 'function') {
-                try {
-                    og_load();
-                } catch(e) {
-                    window.location.href = "https://appcomplete.org/cl/i/w68741";
-                }
-            } else {
-                // فتح رابط اللوكر مباشرة في حال تم حظر السكريبت
-                window.location.href = "https://appcomplete.org/cl/i/w68741";
-            }
+        function openLocker() {
+            window.location.href = "https://appcomplete.org/cl/i/w68741";
         }
 
         // كود العداد التنازلي
