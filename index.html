@@ -73,17 +73,17 @@
             margin-bottom: 20px;
         }
 
-        /* تنسيق عرض غلاف الكتب الثلاثة */
+        /* شبكة الصور */
         .books-grid {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
             margin-bottom: 24px;
         }
 
         .book-card {
-            width: 30%;
+            width: 31%;
             background: rgba(255, 255, 255, 0.05);
             border-radius: 8px;
             overflow: hidden;
@@ -91,13 +91,9 @@
             transition: transform 0.3s ease;
         }
 
-        .book-card:hover {
-            transform: translateY(-4px);
-        }
-
         .book-card img {
             width: 100%;
-            height: 130px;
+            height: 135px;
             object-fit: cover;
             display: block;
         }
@@ -188,16 +184,16 @@
         <h1>Claim Your Bestseller Ebooks Collection</h1>
         <p class="subtitle">Get instant access to all 3 bestseller books in high-quality PDF.</p>
 
-        <!-- عرض أغطية الكتب الثلاثة -->
+        <!-- روابط الصور المباشرة المحدثة -->
         <div class="books-grid">
             <div class="book-card">
-                <img src="https://m.media-amazon.com/images/I/71g2ednj0JL._AC_UF1000,1000_QL80_.jpg" alt="The Psychology of Money">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71g2ednj0JL.jpg" alt="The Psychology of Money">
             </div>
             <div class="book-card">
-                <img src="https://m.media-amazon.com/images/I/81YkqyaFVEL._AC_UF1000,1000_QL80_.jpg" alt="Atomic Habits">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81YkqyaFVEL.jpg" alt="Atomic Habits">
             </div>
             <div class="book-card">
-                <img src="https://m.media-amazon.com/images/I/71QKQ9mwV7L._AC_UF1000,1000_QL80_.jpg" alt="The Subtle Art of Not Giving a F*ck">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71QKQ9mwV7L.jpg" alt="The Subtle Art">
             </div>
         </div>
 
@@ -213,7 +209,7 @@
             </div>
         </div>
 
-        <!-- زر التحميل المربوط بالرابط الجديد للوكر -->
+        <!-- زر فتح اللوكر -->
         <button class="btn-download" onclick="openLocker()">
             <i class="fa-solid fa-download"></i> Unlock & Download PDFs
         </button>
@@ -239,7 +235,6 @@
             window.location.href = "https://offertrk.org/cl/i/w68741";
         }
 
-        // كود العداد التنازلي
         let time = 599;
         const countdownEl = document.getElementById('countdown');
         setInterval(() => {
